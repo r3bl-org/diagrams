@@ -1,9 +1,57 @@
-<mxfile host="app.diagrams.net" modified="2023-09-02T20:21:19.713Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" version="21.7.2" etag="h4qPGkonXZ-LiZ6A_u3E" type="github">
+<mxfile host="app.diagrams.net" modified="2023-09-02T20:27:11.092Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="Nc4vI5A91sKpiCKEZlHc" version="21.7.2" type="github">
   <diagram name="Page-1" id="TQzqNzJDOcijBgApITlg">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="806" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="V0j_GtKm3FhBAt5U_tfT-2" value="Cloud services&lt;br&gt;(Rust)" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="300" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="V0j_GtKm3FhBAt5U_tfT-3" value="TUI app&lt;br&gt;(Rust)" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="120" y="250" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="V0j_GtKm3FhBAt5U_tfT-4" value="Desktop app&lt;br&gt;(Rust)" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="120" y="360" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="V0j_GtKm3FhBAt5U_tfT-5" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="V0j_GtKm3FhBAt5U_tfT-3" target="V0j_GtKm3FhBAt5U_tfT-2">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="200" y="300" as="sourcePoint" />
+            <mxPoint x="300" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V0j_GtKm3FhBAt5U_tfT-6" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="V0j_GtKm3FhBAt5U_tfT-4" target="V0j_GtKm3FhBAt5U_tfT-2">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="210" y="311" as="sourcePoint" />
+            <mxPoint x="310" y="339" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V0j_GtKm3FhBAt5U_tfT-8" value="&lt;h1&gt;Clipboard sync service&lt;/h1&gt;&lt;p&gt;For a signed in user (signed in via github or google) all their clipboard entries are saved in r3bl-base.&lt;/p&gt;" style="text;html=1;strokeColor=#56517e;fillColor=#d0cee2;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="180" width="380" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="V0j_GtKm3FhBAt5U_tfT-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="V0j_GtKm3FhBAt5U_tfT-2" target="V0j_GtKm3FhBAt5U_tfT-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="310" as="sourcePoint" />
+            <mxPoint x="430" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V0j_GtKm3FhBAt5U_tfT-11" value="&lt;h1&gt;System tray&lt;/h1&gt;&lt;div&gt;The signed in user can see their clipboard history entries in the system tray itself&lt;/div&gt;" style="text;html=1;strokeColor=#56517e;fillColor=#d0cee2;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="490" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="V0j_GtKm3FhBAt5U_tfT-12" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="V0j_GtKm3FhBAt5U_tfT-4" target="V0j_GtKm3FhBAt5U_tfT-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="334" as="sourcePoint" />
+            <mxPoint x="479" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="V0j_GtKm3FhBAt5U_tfT-13" value="&lt;h1&gt;Terminal&lt;/h1&gt;&lt;div&gt;The signed in user can access their clipboard history via a TUI on any machine (cloud, local, etc)&lt;/div&gt;" style="text;html=1;fillColor=#d0cee2;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;strokeColor=#56517e;" vertex="1" parent="1">
+          <mxGeometry x="70" y="50" width="190" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="V0j_GtKm3FhBAt5U_tfT-14" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="V0j_GtKm3FhBAt5U_tfT-3" target="V0j_GtKm3FhBAt5U_tfT-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="334" as="sourcePoint" />
+            <mxPoint x="479" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
