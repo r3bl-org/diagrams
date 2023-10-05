@@ -1,9 +1,36 @@
-<mxfile host="app.diagrams.net" modified="2023-10-05T20:32:15.954Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" version="21.7.2" etag="mPXhaEMjgLaT9G3lu_VX" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-05T20:35:52.751Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36" etag="V7lnN6er6-hZZYudVtq4" version="21.7.2" type="github">
   <diagram name="Page-1" id="LfS131pub1vDqDGUgac4">
-    <mxGraphModel>
+    <mxGraphModel dx="794" dy="1183" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="wtjFo3IBB2b0NgwxnOmA-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wtjFo3IBB2b0NgwxnOmA-1" target="wtjFo3IBB2b0NgwxnOmA-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wtjFo3IBB2b0NgwxnOmA-1" value="User Input" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wtjFo3IBB2b0NgwxnOmA-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wtjFo3IBB2b0NgwxnOmA-2" target="wtjFo3IBB2b0NgwxnOmA-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wtjFo3IBB2b0NgwxnOmA-2" value="Data model (AST) using tree sitter for parsing MD (not nom)" style="ellipse;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="302.5" width="135" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="wtjFo3IBB2b0NgwxnOmA-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wtjFo3IBB2b0NgwxnOmA-4" target="wtjFo3IBB2b0NgwxnOmA-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wtjFo3IBB2b0NgwxnOmA-4" value="Render everything into offscreen buffer" style="shape=trapezoid;perimeter=trapezoidPerimeter;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="272.5" y="498" width="210" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="wtjFo3IBB2b0NgwxnOmA-8" value="Print to stdout with ANSI escape sequences" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="493" width="171.38" height="114.25" as="geometry" />
+        </mxCell>
+        <mxCell id="wtjFo3IBB2b0NgwxnOmA-10" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="590" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wtjFo3IBB2b0NgwxnOmA-11" value="New architecture" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#6c8ebf;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="100" y="250" width="140" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
